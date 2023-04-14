@@ -3,7 +3,7 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <h1>Hola mi amor</h1>
+    <h1>Hola mi amor, este va a ser mi clon de Spotify 💖</h1>
   )
 }
 
