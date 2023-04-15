@@ -2,7 +2,7 @@ import { LoginButton, LoginContainer } from './Login'
 
 const endpoint = 'https://accounts.spotify.com/authorize'
 const clientID = '971583d86df04596ad9f2e3757b81d66'
-const redirectURI = 'https://spotify-clone-git-main-isaias-alt.vercel.app/'
+const redirectURI = 'https://spotify-clone-pt0q3te5r-isaias-alt.vercel.app/'
 const scopes = [
   'user-read-currently-playing',
   'user-read-recently-played',
