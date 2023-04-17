@@ -8,7 +8,7 @@ const SidebarChoice = ({ title, Icon }) => {
         Icon && <Icon />
       }
       {
-        Icon ? <h4>{title}</h4> : <p>{title}</p>
+        Icon ? <h4>{title}</h4> : <h5>{title}</h5>
       }
     </Choices>
   )
