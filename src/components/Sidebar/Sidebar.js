@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const SidebarContainer = styled.div`
   flex: 0.2;
-  height: 100vh;
+  height: 100;
   background-color: #000000;
   min-width: 240px;
   color: #ffffff;

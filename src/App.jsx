@@ -1,28 +1,38 @@
-import { useState, useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Login from './components/Login/Login.jsx'
 import Player from './components/Player/Player.jsx'
 import { getTokenFromURL } from './spotifyLoginLogic.js'
-import { SET_USER } from './features/UserSlice.js'
+import { SET_USER, selectUser } from './features/UserSlice.js'
+import { SET_TOKEN, selectToken } from './features/TokenSlice.js'
+import { SET_PLAYLIST } from './features/PlaylistSlice.js'
+import SpotifyWebApi from 'spotify-web-api-js'
+
+const spotify = new SpotifyWebApi()
 
 export default function App () {
-  const [token, setToken] = useState('')
+  // eslint-disable-next-line no-unused-vars
+  const token = useSelector(selectToken)
+  const user = useSelector(selectUser)
   const dispatch = useDispatch()
-  const user = 'javascript'
 
   useEffect(() => {
     const hash = getTokenFromURL()
-    if (hash && hash.access_token) {
-      window.location.hash = ''
-      const _token = hash.access_token
-      dispatch(SET_USER({ user }))
+    const _token = hash.access_token
+    if (_token) {
+      dispatch(SET_TOKEN(_token))
+      spotify.setAccessToken(_token)
+      spotify.getMe().then(user => dispatch(SET_USER(user)))
+      spotify.getPlaylist('5ZEY1gtao9eGzvAD3KEh2x').then(playlist => {
+        dispatch(SET_PLAYLIST(playlist))
+      })
     }
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="App">
       {
-        token ? <Player /> : <Login />
+        token && user ? <Player /> : <Login />
       }
     </div>
   )

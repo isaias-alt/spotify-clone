@@ -12,7 +12,7 @@ const HeaderLeft = styled.div`
   align-items: center;
   padding: 10px;
   min-width: 75px;
-  background-color: #121212;
+  background: #310033;
   flex: 0.5;
   color: #ffffff;
   & input {
@@ -20,7 +20,7 @@ const HeaderLeft = styled.div`
     border-radius: 30px;
     border: none;
     width: 100%;
-    background-color: #121212;
+    background: #310033;
     outline: none;
   }
   & input:focus {

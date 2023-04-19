@@ -14,8 +14,8 @@ const Sidebar = () => {
       <SidebarChoice title="Your Library" Icon={LibraryMusicIcon} />
       <Playlists>Playlists</Playlists>
       <hr />
-      <SidebarChoice title="Playlist 1" />
-      <SidebarChoice title="Playlist 2" />
+      <SidebarChoice title="City Pop シティーポップ" />
+      <SidebarChoice title="Pa' Vola'" />
     </SidebarContainer>
   )
 }

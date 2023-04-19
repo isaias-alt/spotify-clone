@@ -20,11 +20,11 @@ const Footer = () => {
         </div>
       </FooterLeft>
       <FooterCenter>
-        <ShuffleIcon />
-        <SkipPreviousIcon />
-        <PlayCircleIcon />
-        <SkipNextIcon />
-        <RepeatIcon />
+        <ShuffleIcon className='shuffle' />
+        <SkipPreviousIcon className='icon'/>
+        <PlayCircleIcon className='icon'/>
+        <SkipNextIcon className='icon'/>
+        <RepeatIcon className='reapet'/>
       </FooterCenter>
       <FooterRight>
         <Grid container spacing={2}>

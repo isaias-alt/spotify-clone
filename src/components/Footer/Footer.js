@@ -38,7 +38,7 @@ const FooterRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-right: 20px;
+  margin-right: 40px;
   & .MuiSlider-root {
     width: 100px;
     color: #FFFFFF;
