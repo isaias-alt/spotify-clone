@@ -23,9 +23,9 @@ const Body = () => {
       </Info>
       <Songs>
         <Icons>
-          <PlayCircleFilledIcon />
-          <FavoriteIcon />
-          <MoreHorizIcon fontSize='large' />
+          <PlayCircleFilledIcon fontSize='large' className='playButton'/>
+          <FavoriteIcon fontSize='large' className='favoriteButton'/>
+          <MoreHorizIcon fontSize='large' className='moreButton'/>
         </Icons>
         {
           playlist?.tracks?.items.map((item, index) => (
