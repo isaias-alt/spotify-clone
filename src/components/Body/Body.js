@@ -26,9 +26,33 @@ const InfoText = styled.div`
 `
 
 const Songs = styled.div`
-  margin: 20px 30px;
+  margin: 20px -20px;
 `
 
-const Icons = styled.div``
+const Icons = styled.div`
+margin-bottom: 30px;
+& .playButton {
+  margin: 20px 10px 0 100px;
+}
+& .playButton:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+& .favoriteButton {
+  color: #1ED760;
+  margin: 20px 10px 0 100px;
+}
+& .favoriteButton:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+& .moreButton {
+  margin: 20px 10px 0 100px;
+}
+& .moreButton:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer;
+}
+`
 
 export { BodyContainer, Info, InfoText, Songs, Icons }

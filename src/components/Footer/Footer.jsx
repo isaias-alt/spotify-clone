@@ -24,7 +24,7 @@ const Footer = () => {
         <SkipPreviousIcon className='icon'/>
         <PlayCircleIcon className='icon'/>
         <SkipNextIcon className='icon'/>
-        <RepeatIcon className='reapet'/>
+        <RepeatIcon className='repeat'/>
       </FooterCenter>
       <FooterRight>
         <Grid container spacing={2}>

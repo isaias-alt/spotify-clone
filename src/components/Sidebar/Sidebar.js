@@ -16,9 +16,19 @@ const SidebarContainer = styled.div`
     width: 80%;
     margin: 10px auto;
   }
+  & h5 {  
+    color: #B3B3B3;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  & h5:hover {
+    color: #ffffff;
+  }
 `
 
 const Playlists = styled.div`
+  font-size: bold;
   margin: 5px 10px;
 `
 
