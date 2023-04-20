@@ -9,7 +9,6 @@ export const getTokenFromURL = () => {
 
 const endpoint = 'https://accounts.spotify.com/authorize'
 const clientID = '971583d86df04596ad9f2e3757b81d66'
-// const redirectUri = 'http://localhost:5173/'
 const redirectURI = 'https://super-spotify-clone.vercel.app/'
 const scopes = [
   'user-read-currently-playing',

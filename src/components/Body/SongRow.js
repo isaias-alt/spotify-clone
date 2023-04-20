@@ -4,6 +4,7 @@ const SongRowContainer = styled.div`
   display: flex;
   margin-left: 25px;
   align-items: center;
+  justify-content: flex-start;
   z-index: 90;
   color: #ffffff;
   &:hover{
@@ -19,7 +20,7 @@ const SongRowContainer = styled.div`
 `
 
 const SongRowInfo = styled.div`
-  padding: 10px;
+  padding: 10px
 `
 
 export { SongRowContainer, SongRowInfo }

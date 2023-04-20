@@ -26,13 +26,17 @@ const InfoText = styled.div`
 `
 
 const Songs = styled.div`
-  margin: 20px -20px;
+  margin: 20px 20px;
 `
 
 const Icons = styled.div`
 margin-bottom: 30px;
+display: flex;
+align-items: center;
 & .playButton {
-  margin: 20px 10px 0 100px;
+  color: #1ED760;
+  margin: 20px 10px 0 30px;
+  font-size: 70px;
 }
 & .playButton:hover {
   transform: scale(1.1) !important;
@@ -40,18 +44,21 @@ margin-bottom: 30px;
 }
 & .favoriteButton {
   color: #1ED760;
-  margin: 20px 10px 0 100px;
+  margin: 20px 10px 0 20px;
+  font-size: 40px;
 }
 & .favoriteButton:hover {
   transform: scale(1.1) !important;
   cursor: pointer;
 }
 & .moreButton {
-  margin: 20px 10px 0 100px;
+  color: #B3B3B3;
+  margin: 20px 10px 0 20px;
 }
 & .moreButton:hover {
   transform: scale(1.1) !important;
   cursor: pointer;
+  color: #ffffff;
 }
 `
 
